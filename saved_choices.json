@@ -1,0 +1,105 @@
+{
+  "final_candidate": "C: tree, forward selection",
+  "final_variables": [
+    "S1_Light",
+    "S1_Temp",
+    "S2_Light"
+  ],
+  "final_hyperparameters": {
+    "max_depth": 5,
+    "min_samples_leaf": 20
+  },
+  "lasso_lam": 0.0003727593720314938,
+  "forward_path": [
+    "S1_Light",
+    "S1_Temp",
+    "S2_Light",
+    "S1_Sound",
+    "S2_Sound",
+    "S2_Temp",
+    "S3_Sound",
+    "S4_Light",
+    "S4_Sound",
+    "S4_Temp",
+    "S5_CO2_Slope",
+    "S6_PIR",
+    "S7_PIR",
+    "S5_CO2",
+    "S3_Light",
+    "S3_Temp"
+  ],
+  "forward_k": 3,
+  "all_candidates": {
+    "A: tree, 16 raw sensors": {
+      "variables": [
+        "S1_Temp",
+        "S2_Temp",
+        "S3_Temp",
+        "S4_Temp",
+        "S1_Light",
+        "S2_Light",
+        "S3_Light",
+        "S4_Light",
+        "S1_Sound",
+        "S2_Sound",
+        "S3_Sound",
+        "S4_Sound",
+        "S5_CO2",
+        "S5_CO2_Slope",
+        "S6_PIR",
+        "S7_PIR"
+      ],
+      "hyperparameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 1
+      }
+    },
+    "B: tree, 6 aggregated sensors": {
+      "variables": [
+        "temp_mean",
+        "light_mean",
+        "sound_max",
+        "S5_CO2",
+        "S5_CO2_Slope",
+        "PIR_sum"
+      ],
+      "hyperparameters": {
+        "max_depth": 8,
+        "min_samples_leaf": 1
+      }
+    },
+    "C: tree, forward selection": {
+      "variables": [
+        "S1_Light",
+        "S1_Temp",
+        "S2_Light"
+      ],
+      "hyperparameters": {
+        "max_depth": 5,
+        "min_samples_leaf": 20
+      }
+    },
+    "D: tree, LASSO selection": {
+      "variables": [
+        "S2_Temp",
+        "S3_Temp",
+        "S4_Temp",
+        "S1_Light",
+        "S2_Light",
+        "S3_Light",
+        "S4_Light",
+        "S2_Sound",
+        "S3_Sound",
+        "S4_Sound",
+        "S5_CO2",
+        "S5_CO2_Slope",
+        "S6_PIR",
+        "S7_PIR"
+      ],
+      "hyperparameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 1
+      }
+    }
+  }
+}
